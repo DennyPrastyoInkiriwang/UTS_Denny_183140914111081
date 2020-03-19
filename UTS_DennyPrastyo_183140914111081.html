@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+        .sidebar{      
+            background-color: gray;
+            width: 15%;
+            height: 100%;
+            position: fixed;
+            transition: 1s;
+        }
+
+        .sidebar2{      
+            background-color: gray;
+            width: 0;
+            height: 0%;
+            transition: 1s;
+            position: fixed;
+            overflow:auto;
+            text-align: right;
+        }
+
+        .main{
+            background-color:gray;
+            margin-left: 100px;
+            transition: 1s;
+        }
+
+        .main2{
+            background-color:gray;
+            margin-left: 0px;
+            transition: 1s;
+        }
+        .kotak1{
+            height: 100px;
+            width: 100px;
+            background-color: gray;
+            float: left;
+			margin-left:10%;
+            position: relative;
+        }
+		div:hover {
+    background-color: blue;
+}
+        .kotak2{
+            height: 100px;
+            width: 100px;
+            background-color: gray;
+            float: left;
+            margin-left: 30px;
+        }
+        .kotak3{
+            height: 100px;
+            width: 100px;
+            background-color: gray;
+            float: left;
+            margin-left: 30px;
+        }
+        .kotak4{
+            height: 100px;
+            width: 100px;
+            background-color: gray;
+            float: left;
+            margin-left: 30px;
+        }
+        .kotakR{
+            width: 15%;
+            height: 1000px;
+            background-color: gray;
+            float: right;
+        }
+
+        .buton{
+            float: left;
+        }
+        .buntell{
+            height: 100%;
+            width: 100%;
+            border: #555;
+        }
+		
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<script>
+        function closeNav(){
+            document.getElementById('sidebar').className="sidebar2";
+            document.getElementById('main').className="main2";
+        }
+        function openNav(){
+            document.getElementById('sidebar').className="sidebar";
+            document.getElementById('main').className="main";
+        }
+    </script>
+    <div class="sidebar2" id="sidebar">
+        <span style="font-size: 30px;cursor: pointer;" onclick="closeNav()">X</span>
+        <ul>
+ 
+        </ul>
+    </div>
+    <div class="main2" id="main">
+        <div class="buton"><span style="font-size: 30px;cursor: pointer;" onclick="openNav()">&#9776;</span></div>
+        
+        <div class="buntell">
+            <div class="kotak1"></div>
+            <div class="kotak2"></div>
+            <div class="kotak3"></div>
+            <div class="kotak4"></div>
+			
+        </div>
+		<div class="container"> </div>
+	   <div class="container2"> </div>
+
+        <div></div>
+        <div class="kotakB"></div>
+        <div class="kotakR"></div>
+        
+    </div>
+
+
+
+    
+</body>
+</html>
